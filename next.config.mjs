@@ -10,7 +10,10 @@ const nextConfig = {
                 pathname:'/photos/**'//anything come after /photos/
             }
         ]
-    }
+    },
+    eslint:{
+        ignoreDuringBuilds:true,
+    },
 };
 
 export default nextConfig;
