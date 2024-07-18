@@ -8,7 +8,7 @@ type Props={
 }
 import React from 'react'
 
-export default function ({topic,page,prevPage,nextPage}:Props) {
+ function Footer ({topic,page,prevPage,nextPage}:Props) {
 if(!prevPage && !nextPage ) return
 const pageNums:number[]=[]
 if(prevPage&&nextPage){
@@ -42,3 +42,4 @@ const prevPageArea=prevPage?(
     </footer>
   )
 }
+export default Footer
